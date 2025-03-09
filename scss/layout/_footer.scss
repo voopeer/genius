@@ -8,84 +8,52 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    .footer-container {
-
+    &__nav {
+    
+        flex-basis: 50%;
         display: flex;
         gap: 20px;
 
-        .footer-nav {
+        ul {
 
             flex-basis: 50%;
-            display: flex;
-            gap: 20px;
-
-            .footer-logo {
-
-                flex-basis: 50%;
-
-            }
-
-            ul {
-
-                flex-basis: 50%;
-
-            }
 
         }
 
-        .footer-address {
+    }
+
+    &__logo {
+
+        flex-basis: 50%;
+
+    }
+
+    &__container {
+
+        display: flex;
+        gap: 20px;
+    
+    }
+
+    &__address {
+
+        flex-basis: 50%;
+        display: flex;
+        gap: 20px;
+
+        ul {
 
             flex-basis: 50%;
-            display: flex;
-            gap: 20px;
-
-            .address-copyright {
-
-                font-size: 14px;
-                color: #A18268;
-
-            }
-
-            .address-icon {
-
-                fill: var(--color-primary-light);
-
-                &:hover {
-
-                    fill: var(--color-brand-normal);
-
-                }
-
-            }
-
-            ul {
-
-                flex-basis: 50%;
-
-            }
-
-            .address-info {
-
-                flex-basis: 50%;
-
-            }
-
-            .address-link {
-
-                font-size: 16px;
-                font-weight: 300;
-                color: var(--color-primary-light);
-                text-decoration: none;
-
-                &:hover {
-
-                    color: var(--color-brand-normal);
-
-                }
-
-            }
 
         }
+
+        .address-info {
+
+            flex-basis: 50%;
+
+        }
+
+    
 
     }
 
@@ -118,6 +86,43 @@
         height: 190px;
         right: 0;
 
+    }
+
+}
+
+.address {
+
+    &__copyright {
+
+        font-size: 14px;
+        color: #b9977a;
+    }
+
+    &-icon {
+
+        fill: var(--color-primary-light);
+
+        &:hover {
+
+            fill: var(--color-brand-normal);
+
+        }
+
+    }
+
+    &__link {
+    
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-primary-light);
+        text-decoration: none;
+    
+        &:hover {
+    
+            color: var(--color-brand-normal);
+    
+        }
+    
     }
 
 }

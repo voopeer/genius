@@ -1,59 +1,6 @@
 .chefs-section {
 
-    .chef-title {
-
-        margin-bottom: 16px;
-        font-weight: 600;
-        font-size: 40px;
-
-    }
-
-    .chef-text {
-
-        p {
-            margin-bottom: 24px;
-
-            &:last-child {
-
-                margin-bottom: 0px;
-
-            }
-        }
-
-    }
-
-    .chefs-list {
-
-        display: flex;
-        gap: 40px 30px;
-        flex-wrap: wrap;
-
-        .chefs-item {
-
-            flex-basis: calc((100% - 30px) / 2);
-
-            .chef-card {
-
-                display: flex;
-                gap: 30px;
-
-            }
-
-            .chef-photo {
-
-                border-radius: 4px 4px 4px 200px;
-
-                box-shadow:
-                    -16px 16px 0 0 var(--color-primary-light),
-                    -16px 16px 0 2px var(--color-secondary-dark);
-
-            }
-
-        }
-
-    }
-
-    .chefs-title {
+    &__title {
 
         margin: 0 auto 80px;
         position: relative;
@@ -64,6 +11,7 @@
             display: block;
             position: absolute;
             width: 352px;
+            bottom: 24px;
             border: 2px solid var(--color-brand-light);
             content: '';
 
@@ -72,14 +20,65 @@
         &::after {
 
             right: 0;
-            bottom: 24px;
 
         }
 
         &::before {
 
             left: 0;
-            bottom: 24px;
+
+        }
+
+    }
+
+    &__list {
+
+        display: flex;
+        gap: 40px 30px;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+
+        flex-basis: calc((100% - 30px) / 2);
+
+        .chef-card {
+
+            display: flex;
+            gap: 30px;
+
+            &__photo {
+            
+                border-radius: 4px 4px 4px 200px;
+        
+                box-shadow:
+                -16px 16px 0 0 var(--color-primary-light),
+                -16px 16px 0 2px var(--color-secondary-dark);
+        
+            }
+
+            &__text {
+
+                p {
+                    margin-bottom: 24px;
+
+                    &:last-child {
+
+                        margin-bottom: 0px;
+
+                    }
+                }
+
+            }
+
+            &__name {
+
+                margin-bottom: 16px;
+                font-weight: 600;
+                font-size: 40px;
+
+            }
 
         }
 
